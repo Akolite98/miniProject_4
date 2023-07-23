@@ -1,0 +1,1 @@
+This mini-project is a simple HTML file that includes a JavaScript function for calculating tips. The provided function takes in the total bill amount and the desired tip percentage as inputs and returns either the total bill amount with the tip included or just the tip amount based on the user's preference.
