@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mini Project #4</title>
+  </head>
+  <body>
+    <h1>Mini Project #4: Tip Calculator</h1>
+
+    <script>
+      function tip(totalAmount, tip = 10, returnTipOnly = false) {
+        tip = tip / 100; // 10 -> 0.10
+        var tipAmount = totalAmount * tip;
+        totalAmount = totalAmount + tipAmount;
+        if (returnTipOnly) {
+          return tipAmount;
+        }
+        return totalAmount;
+      }
+
+      var totalBill = tip(25, 10);
+      console.log(totalBill);
+
+      var totalTip = tip(25, 10, true);
+      console.log(totalTip);
+    </script>
+  </body>
+</html>
